@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+header {
+    background-color: rgb(0, 13, 83);
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #800080;
+    font-size: 2em;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #800080;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.gallery-item {
+    display: inline-block;
+    margin: 2rem;
+    text-align: center;
+}
+
+button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #800080;
+    color: white;
+}
+
+td {
+    color: #800080;
+}
+
+.outline {
+    border: 1px solid #800080;
+    color: #800080;
+    background-color: transparent;
+}
+
+
+#about-intro {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#about-intro p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#mission-vision {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mission, .vision {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+img {
+    display: block;
+    width: 300px;
+}
+
+.logo img {
+    display: inline;
+    width: 3rem;
+}
+
+ /*modal*/
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+.close:hover {
+    color: #000;
+}
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+#checkout-form label {
+    margin-top: 10px;
+}
+#checkout-form input, #checkout-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#checkout-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #800080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#checkout-form button:hover {
+    background-color: #800080;
+}
+
+.outline{
+    border: 1px solid #800080;
+    color: #800080;
+    background-color: transparent;
+}

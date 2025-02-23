@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo"><img src="img/logo.png" alt="" width="50">Book <span class="lgo">Haven</span> Store</h1>
+        <nav>
+            <b>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About Us</a>
+                <a href="cart.html">Cart</a>
+            </b>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="gallery" style="margin: 1em 5em;">
+            <h2>Available Books</h2>
+            <div class="gallery-item">
+                <img src="https://booksondemand.ma/cdn/shop/products/81D-gdnku_L-min.jpg?v=1631701555&width=990" alt="They Both Die at The End "><br>
+                <p>They Both Die at The End - $25</p><br>
+                <button onclick="addToCart('They Both Die at The End', 25)">Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="https://booksondemand.ma/cdn/shop/files/Atomic.png?v=1727078355&width=990" alt="Atomic Habits"><br>
+                <p>Atomic Habits - $48</p><br>
+                <button onclick="addToCart('Atomic Habits', 48)">Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="https://booksondemand.ma/cdn/shop/products/IKIGAI1.jpg?v=1609449282&width=990" alt="Ikigai"><br>
+                <p>Ikigai - $32</p><br>
+                <button onclick="addToCart('Ikigai', 32)">Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="https://booksondemand.ma/cdn/shop/products/71VrvTppC3S.jpg?v=1631701450&width=990" alt="Punk 57 Seedlings"><br>
+                <p>Punk 57 - $28</p><br>
+                <button onclick="addToCart('Punk 57', 12)">Add to Cart</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p><b>&copy; 2024 Book Haven Bookstore. All rights reserved.</b></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

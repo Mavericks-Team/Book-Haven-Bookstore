@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo"><img src="img/logo.png" alt="" width="50">Book <span class="lgo">Haven</span> Store</h1>
+        <nav>
+            <b>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About Us</a>
+                <a href="cart.html">Cart</a>
+            </b>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="cart" style="margin: 1em 5em;">
+            <h2 class="mb-1">Your Cart</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+            </table>
+            <br>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <br>
+            <button class="outline" onclick="clearCart()">Clear Cart</button>
+            <button onclick="openCheckoutModal()">Checkout</button>
+        </section>
+    </main>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCheckoutModal()">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label for="name">Card Number:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" required></textarea>
+                <button type="submit">Confirm Purchase</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p><b>&copy; 2024 Book Haven Bookstore. All rights reserved.</b></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
